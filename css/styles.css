@@ -1,0 +1,186 @@
+
+body {
+  background-color: #cec5b3;
+}
+.navigation {
+  background-color: #ff963a;
+  color: white;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  margin-left: -15px;
+  padding-top: 0px;
+  padding-bottom: 5px;
+  border-bottom-style: solid;
+  border-bottom-width: 5px;
+  border-bottom-color: white;
+}
+#bar-title {
+  font-family: 'Poiret One';
+  font-weight: bolder;
+  margin-top: 0px;
+  margin-bottom: 20px;
+}
+.nav-btn {
+  transition-duration: 0.4s;
+  background-color: inherit;
+  font-family: 'Poiret One';
+  font-size: 16px;
+  color: white;
+  margin-top: -15px;
+  margin-bottom: -7px;
+  font-weight: bold;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+.nav-btn:hover {
+  color: #ff963a;
+  border-radius: 0px;
+  background-color: white;
+}
+#home {
+  padding-top: 65px;
+  height: 1325px;
+  background-image: url(https://static.pexels.com/photos/255464/pexels-photo-255464.jpeg);
+  background-position: center;
+  background-size: cover;
+  border-bottom-style: solid;
+  border-bottom-color: white;
+  border-bottom-width: 1px;
+}
+#title {
+  margin-top: 250px;
+  color: white;
+  font-size: 60px;
+  font-family: 'Poiret One';
+  font-weight: bolder;
+}
+
+#title2 {
+  margin-top: -5px;
+  font-family: 'Poiret One';
+  color: white;
+  font-size: 25px;
+}
+.social-btn {
+  width: 150px;
+  height: 60px;
+  transition-duration: 0.4s;
+  color: white;
+  background-color: #ff963a;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 5%;
+  border-color: white;
+  color: white;
+  font-size: 20px;
+  font-family: 'Poiret One';
+  font-weight: bolder;
+  padding-bottom: 5px;
+}
+.social-btn:hover {
+  color: #ff963a;
+  border-color: #ff963a;
+  background-color: white;
+}
+hr {
+  margin-right: 75px;
+  margin-left: 75px;
+}
+#about {
+  margin-top: -20px;
+  background-image: url(https://static.pexels.com/photos/1459/street-car-vehicle-blur.jpg);
+  background-position: center;
+  background-size: cover;
+  border-bottom-style: solid;
+  border-bottom-color: white;
+  border-bottom-width: 1px;
+}
+#about_me_title {
+  padding-top: 150px;
+  color: white;
+  font-family: 'Poiret One';
+  font-weight: bolder;
+  font-size: 60px;
+}
+.subtitles {
+  color: white;
+  font-size: 30px;
+  font-family: 'Poiret One';
+  font-weight: bolder;
+}
+p {
+  color: white;
+  font-size: 20px;
+  font-family: 'Poiret One';
+  font-weight: bolder;
+  margin-right: 30px;
+  margin-left: 30px;
+}
+#portrait {
+  height: 200px;
+  width: 200px;
+  border: none;
+  border-radius: 50%;
+}
+.technologies {
+  height: 128px;
+  width: 128px;
+}
+#portfolio {
+  height: 1400px;
+  margin-top: -20px;
+  background-image: url(https://static.pexels.com/photos/251603/pexels-photo-251603.jpeg);
+  background-position: center;
+  background-size: cover;
+  border-bottom-style: solid;
+  border-bottom-color: white;
+  border-bottom-width: 1px;
+}
+#portfolio_title {
+  padding-top: 150px;
+  padding-right: 20px;
+  padding-left: 20px;
+  color: white;
+  font-family: 'Poiret One';
+  font-weight: bolder;
+  font-size: 60px;
+}
+.projects {
+  margin-top: 60px;
+  height: auto;
+  width: 700px;
+  border-style: solid;
+  border-color: #ff963a;
+  border-width: 5px;
+  border-radius: 25px;
+}
+#contact {
+  height: 1300px;
+  margin-top: -20px;
+  background-image: url(https://static.pexels.com/photos/35177/pexels-photo.jpg);
+  background-position: center;
+  background-size: cover;
+}
+#contact_title {
+  padding-top: 150px;
+  padding-right: 20px;
+  padding-left: 20px;
+  color: white;
+  font-family: 'Poiret One';
+  font-weight: bolder;
+  font-size: 60px;
+}
+footer {
+  background-color: #cec5b3;
+  color: white;
+  margin-right: -15px;
+  margin-left: -15px;
+  padding-top: 15px;
+  padding-bottom: -20px;
+}
+h4 {
+  font-size: 20px;
+  font-family: 'Poiret One';
+  font-weight: bolder;
+}
