@@ -1,186 +1,507 @@
 
-body {
-  background-color: #cec5b3;
-}
-.navigation {
-  background-color: #ff963a;
-  color: white;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  margin-left: -15px;
-  padding-top: 0px;
-  padding-bottom: 5px;
-  border-bottom-style: solid;
-  border-bottom-width: 5px;
-  border-bottom-color: white;
-}
-#bar-title {
-  font-family: 'Poiret One';
-  font-weight: bolder;
-  margin-top: 0px;
-  margin-bottom: 20px;
-}
-.nav-btn {
-  transition-duration: 0.4s;
-  background-color: inherit;
-  font-family: 'Poiret One';
-  font-size: 16px;
-  color: white;
-  margin-top: -15px;
-  margin-bottom: -7px;
-  font-weight: bold;
-  padding-right: 10px;
-  padding-left: 10px;
-}
-.nav-btn:hover {
-  color: #ff963a;
-  border-radius: 0px;
-  background-color: white;
-}
-#home {
-  padding-top: 65px;
-  height: 1325px;
-  background-image: url(https://static.pexels.com/photos/255464/pexels-photo-255464.jpeg);
-  background-position: center;
-  background-size: cover;
-  border-bottom-style: solid;
-  border-bottom-color: white;
-  border-bottom-width: 1px;
-}
-#title {
-  margin-top: 250px;
-  color: white;
-  font-size: 60px;
-  font-family: 'Poiret One';
-  font-weight: bolder;
+
+html{
+	background-color: #eaf0f2;
 }
 
-#title2 {
-  margin-top: -5px;
-  font-family: 'Poiret One';
+.menu{
+	text-align: center;
+	padding-top: 25px;
+	margin-bottom:200px;
+    
+}
+
+
+
+.menu img{
+	opacity: 0.4;
+	margin: 20px auto;
+}
+
+.menu h1{
+	margin-top:0;
+	 font-family: 'Nunito', sans-serif;
+	color: #3F71AE;
+	padding-bottom: 16px;
+}
+
+.menu h2{
+	color: #F05283;
+}
+
+.menu h2 a{
+	color:inherit;
+	text-decoration: none;
+	display: inline-block;
+	border: 1px solid #F05283;
+	padding: 10px 15px;
+	border-radius: 3px;
+	 font-family: 'Nunito', sans-serif;
+	text-transform: uppercase;
+}
+
+.menu h2 a:hover{
+	background-color:#F05283;
+	transition:0.2s;
+	color:#fff;
+}
+
+.menu ul {
+	max-width: 600px;
+	margin: 60px auto 0;
+}
+
+.menu ul a{
+	text-decoration: none;
+	color: #FFF;
+	text-align: left;
+	background-color: #B9C1CA;
+	padding: 10px 16px;
+	border-radius: 2px;
+	opacity: 0.8;
+	font-size: 16px;
+	display: inline-block;
+	margin: 4px;
+	line-height: 1;
+	outline: none;
+
+	transition: 0.2s ease;
+}
+
+.menu ul li a.active{
+	background-color: #66B650;
+	pointer-events: none;
+}
+
+.menu ul li a:hover {
+	opacity: 1;
+}
+
+.menu ul{
+	list-style: none;
+	padding: 0;
+
+}
+
+.menu ul li{
+	display: inline-block;
+}
+
+@media (max-height:800px){
+	.menu { padding-top:40px; }
+}
+
+
+
+
+
+.header-basic-light{
+	padding: 20px 40px;
+	box-sizing:border-box;
+	box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.15);
+	height: 80px;
+	background-color: #fff;
+    position: fixed;
+    width:100%;
+    z-index: 900;
+    
+}
+
+.header-basic-light .header-limiter {
+	max-width: 1200px;
+	text-align: center;
+	margin: 0 auto;
+   
+}
+
+/* Logo */
+
+.header-basic-light .header-limiter h1{
+	float: left;
+	font:  font-family: 'Nunito', sans-serif;
+	line-height: 40px;
+	margin: 0;
+}
+
+.header-basic-light .header-limiter h1 span {
+	color: #5383d3;
+}
+
+/* The header links */
+
+.header-basic-light .header-limiter a {
+	color: #5c616a;
+	text-decoration: none;
+}
+
+.header-basic-light .header-limiter nav{
+	 font-family: 'Nunito', sans-serif;
+	line-height: 40px;
+	float: right;
+}
+
+.header-basic-light .header-limiter nav a{
+	display: inline-block;
+	padding: 0 5px;
+	opacity: 0.9;
+	text-decoration:none;
+	color: #5c616a;
+	line-height:1;
+}
+
+.header-basic-light .header-limiter nav a.selected {
+	background-color: #86a3d5;
+	color: #ffffff;
+	border-radius: 3px;
+	padding:6px 10px;
+}
+
+/* Making the header responsive. */
+
+@media all and (max-width: 600px) {
+
+	.header-basic-light {
+		padding: 20px 0;
+		height: 85px;
+	}
+
+	.header-basic-light .header-limiter h1 {
+		float: none;
+		margin: -8px 0 10px;
+		text-align: center;
+		font-size: 24px;
+		line-height: 1;
+	}
+
+	.header-basic-light .header-limiter nav {
+		line-height: 1;
+		float:none;
+	}
+
+	.header-basic-light .header-limiter nav a {
+		font-size: 13px;
+	}
+
+}
+
+
+
+body {
+	margin:0;
+	padding:0;
+     font-family: 'Nunito', sans-serif;
+}
+
+
+
+
+
+
+/* timeline */
+
+
+.timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: white;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+}
+
+/* Container around content */
+.container {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+}
+
+/* The circles on the timeline */
+.container::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -17px;
+    background-color: white;
+    border: 4px solid #FF9F55;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+/* Place the container to the left */
+.left {
+    left: 0;
+}
+
+/* Place the container to the right */
+.right {
+    left: 50%;
+}
+
+/* Add arrows to the left container (pointing right) */
+.left::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    right: 30px;
+    border: medium solid white;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent white;
+}
+
+/* Add arrows to the right container (pointing left) */
+.right::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    left: 30px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+}
+
+/* Fix the circle for containers on the right side */
+.right::after {
+    left: -16px;
+}
+
+/* The actual content */
+.content {
+    padding: 20px 30px;
+    background-color: white;
+    position: relative;
+    border-radius: 6px;
+}
+
+/* Media queries - Responsive timeline on screens less than 600px wide */
+@media all and (max-width: 600px) {
+  /* Place the timelime to the left */
+  .timeline::after {
+    left: 31px;
+  }
+  
+  /* Full-width containers */
+  .container {
+    width: 60%;
+    padding-left: 70px;
+    padding-right: 25px;
+  }
+  
+  /* Make sure that all arrows are pointing leftwards */
+  .container::before {
+    left: 60px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
+
+  /* Make sure all circles are at the same spot */
+  .left::after, .right::after {
+    left: 15px;
+  }
+  
+  /* Make all right containers behave like the left ones */
+  .right {
+    left: 0%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.skillset{
+    width:50%;
+    margin-left: 20%;
+}
+
+.containe {
+    width: 100%; /* Full width */
+    background-color: #ddd; /* Grey background */
+}
+
+.skills {
+    text-align: center; /* Right-align text */
+    padding-right: 20px; /* Add some right padding */
+    line-height: 40px; /* Set the line-height to center the text inside the skill bar, and to expand the height of the container */
+    color: white; /* White text color */
+}
+
+.html {width: 90%; background-color: #4CAF50;} /* Green */
+.css {width: 80%; background-color: #2196F3;} /* Blue */
+.js {width: 65%; background-color: #f44336;} /* Red */
+.php {width: 60%; background-color: #808080;} /* Dark Grey */
+
+
+pre{
+  text-align: center;  
+    font-size: 24px;
+      font-family: 'Nunito', sans-serif;
+}
+
+hr{
+    color: skyblue;
+    width: 90%;
+    border-bottom:1px blue;
+        
+}
+
+
+
+
+.pictures{
+    width: 80%;
+    margin-left:5px;
+    margin-right: 5px
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
   color: white;
-  font-size: 25px;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
 }
-.social-btn {
-  width: 150px;
-  height: 60px;
-  transition-duration: 0.4s;
-  color: white;
-  background-color: #ff963a;
-  border-style: solid;
-  border-width: 2px;
-  border-radius: 5%;
-  border-color: white;
-  color: white;
-  font-size: 20px;
-  font-family: 'Poiret One';
-  font-weight: bolder;
-  padding-bottom: 5px;
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
 }
-.social-btn:hover {
-  color: #ff963a;
-  border-color: #ff963a;
-  background-color: white;
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
 }
-hr {
-  margin-right: 75px;
-  margin-left: 75px;
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
 }
-#about {
-  margin-top: -20px;
-  background-image: url(https://static.pexels.com/photos/1459/street-car-vehicle-blur.jpg);
-  background-position: center;
-  background-size: cover;
-  border-bottom-style: solid;
-  border-bottom-color: white;
-  border-bottom-width: 1px;
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
 }
-#about_me_title {
-  padding-top: 150px;
-  color: white;
-  font-family: 'Poiret One';
-  font-weight: bolder;
-  font-size: 60px;
-}
-.subtitles {
-  color: white;
-  font-size: 30px;
-  font-family: 'Poiret One';
-  font-weight: bolder;
-}
-p {
-  color: white;
-  font-size: 20px;
-  font-family: 'Poiret One';
-  font-weight: bolder;
-  margin-right: 30px;
-  margin-left: 30px;
-}
-#portrait {
-  height: 200px;
-  width: 200px;
-  border: none;
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor:pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
   border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
 }
-.technologies {
-  height: 128px;
-  width: 128px;
+
+.active, .dot:hover {
+  background-color: #717171;
 }
-#portfolio {
-  height: 1400px;
-  margin-top: -20px;
-  background-image: url(https://static.pexels.com/photos/251603/pexels-photo-251603.jpeg);
-  background-position: center;
-  background-size: cover;
-  border-bottom-style: solid;
-  border-bottom-color: white;
-  border-bottom-width: 1px;
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
 }
-#portfolio_title {
-  padding-top: 150px;
-  padding-right: 20px;
-  padding-left: 20px;
-  color: white;
-  font-family: 'Poiret One';
-  font-weight: bolder;
-  font-size: 60px;
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
 }
-.projects {
-  margin-top: 60px;
-  height: auto;
-  width: 700px;
-  border-style: solid;
-  border-color: #ff963a;
-  border-width: 5px;
-  border-radius: 25px;
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
 }
-#contact {
-  height: 1300px;
-  margin-top: -20px;
-  background-image: url(https://static.pexels.com/photos/35177/pexels-photo.jpg);
-  background-position: center;
-  background-size: cover;
-}
-#contact_title {
-  padding-top: 150px;
-  padding-right: 20px;
-  padding-left: 20px;
-  color: white;
-  font-family: 'Poiret One';
-  font-weight: bolder;
-  font-size: 60px;
-}
-footer {
-  background-color: #cec5b3;
-  color: white;
-  margin-right: -15px;
-  margin-left: -15px;
-  padding-top: 15px;
-  padding-bottom: -20px;
-}
-h4 {
-  font-size: 20px;
-  font-family: 'Poiret One';
-  font-weight: bolder;
-}
+
+
+
+
+
+
+
+
+
+
